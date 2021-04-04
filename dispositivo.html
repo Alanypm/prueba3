@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PWA IoT</title>
+ 
+  <meta name="theme-color" content="#9c27b0">
+  <link rel="icon" sizes="32x32" href="favicon.png">
+  <link rel="manifest" href="./manifest.json">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="herramientas">
+      <h1>Simulación de Dispositivo IoT</h1>
+    </div>
+  </header>
+  <div class="contenido">
+    <p>
+      <a href="index.html"
+        target="_blank">
+        Ver móvil.</a>
+    </p>
+    <p>
+      <label>
+        Dispositivo
+        <output
+          id="ctDispositivo">
+        </output>
+      </label>
+    </p>
+    <p>
+      <label>
+        Entrada
+        <input id="ctEntrada"
+          type="range"
+          min="0" max="10">
+      </label>
+    </p>
+    <p>
+      <label>
+        <input id="ctSondea"
+          type="checkbox"
+          checked>
+        Sondea Salida
+      </label>
+    </p>
+    <p>
+      <label>
+        Salida
+        <output id="ctSalida">
+        </output>
+      </label>
+    </p>
+    <p>
+      <output id="iotError">
+      </output>
+    </p>
+  </div>
+<footer>
+  <div>
+    <strong>&copy; 2021
+      Alan Yair Pérez Mireles.</strong>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+<script type="module"
+src="disp/CtrlDispositivo.js">
+</script>
+</body>
+
+</html>

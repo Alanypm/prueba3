@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PWA IoT</title>
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+  <script src="js/init.js"></script>
+
+  <meta name="theme-color" content="#9c27b0">
+  <link rel="icon" sizes="32x32" href="favicon.png">
+
+  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="herramientas">
+      <h1>Historial IoT</h1>
+    </div>
+  </header>
+  <div class="contenido">
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>dispositivoId</th>
+          <th>valor</th>
+          <th>timestamp</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+<footer>
+  <div>
+    <strong>&copy; 2021
+      Alan Yair Pérez Mireles.</strong>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+<script type="module" src="js/CtrlHistorial.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PWA IoT</title>
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+  <script src="js/init.js"></script>
+
+  <meta name="theme-color" content="#9c27b0">
+  <meta name="apple-mobile-web-app-title" content="dmppwa">
+  <meta name="apple-mobile-web-app-capable"content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="icon" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" href="img/icono2048.png">
+  <link rel="apple-touch-icon" sizes="256x256" href="img/icono256.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/icono1024.png">
+  <link rel="apple-touch-icon" sizes="2048x2048" href="img/icono2048.png">
+
+  <link rel="manifest" href="./manifest.json">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="herramientas">
+      <h1>Control IoT</h1>
+    </div>
+  </header>
+  <div class="contenido">
+    <p>
+      <a href="dispositivo.html"
+        target="_blank">Ver
+        dispositivo
+        simulado.</a>
+    </p>
+    <p>
+      <a href="historial.html"
+        target="_blank">Ver
+        historial.</a>
+    </p>
+    <p>
+      <label>
+        Dispositivo
+        <output
+          id="ctDispositivo">
+        </output>
+      </label>
+    </p>
+    <p>
+      <label>
+        Entrada
+        <meter id="ctEntrada"
+          min="0" max="10">
+        </meter>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input id=ctSalida
+          type="checkbox">
+        Salida
+      </label>
+    </p>
+  </div>
+<footer>
+  <div>
+    <strong>&copy; 2021
+      Alan Yair Pérez Mireles.</strong>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+<script type="module" src="js/CtrlMovil.js"></script>
+</body>
+
+</html>
